@@ -94,3 +94,4 @@ struct DefaultTheme: Theme {
     let textColor = AppColorScheme.textPrimary
     let cardColor = AppColorScheme.cardBackground
 }
+

@@ -328,3 +328,4 @@ struct TeamInsight {
         self.dateGenerated = Date()
     }
 }
+

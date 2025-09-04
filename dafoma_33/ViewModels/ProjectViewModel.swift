@@ -344,3 +344,4 @@ struct TaskTemplate {
         self.estimatedHours = estimatedHours
     }
 }
+

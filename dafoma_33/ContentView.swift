@@ -85,6 +85,14 @@ struct MainTabView: View {
                         Text("Team")
                     }
                     .tag(3)
+                
+                // Settings
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gear.circle.fill")
+                        Text("Settings")
+                    }
+                    .tag(4)
             }
             .accentColor(AppColorScheme.primaryAction)
             .onAppear {

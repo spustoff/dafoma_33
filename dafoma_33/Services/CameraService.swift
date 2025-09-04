@@ -304,3 +304,4 @@ struct CameraView: UIViewControllerRepresentable {
         }
     }
 }
+
