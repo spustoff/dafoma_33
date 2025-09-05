@@ -410,9 +410,9 @@ struct OnboardingPage {
             iconName: "person.3.sequence"
         ),
         OnboardingPage(
-            title: "Smart Document Scanning",
-            description: "Use your camera to scan documents and convert them into actionable tasks automatically.",
-            iconName: "doc.viewfinder"
+            title: "Smart Task Creation",
+            description: "Create and organize tasks efficiently with our intuitive interface and smart categorization.",
+            iconName: "doc.text.fill"
         ),
         OnboardingPage(
             title: "Educational Insights",

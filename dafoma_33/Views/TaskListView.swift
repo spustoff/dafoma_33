@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TaskListView: View {
     @StateObject private var taskViewModel = TaskViewModel()
-    @StateObject private var cameraService = CameraService()
     @State private var showingAddTask = false
     @State private var showingFilters = false
     @State private var selectedTask: TaskModel?
@@ -64,25 +63,15 @@ struct TaskListView: View {
             )) { task in
                 TaskDetailView(task: task)
             }
-            .sheet(isPresented: $cameraService.isShowingDocumentScanner) {
-                DocumentScannerView(cameraService: cameraService)
-            }
-            .onAppear {
-                setupCameraService()
-            }
         }
     }
     
-    private func setupCameraService() {
-        // Camera service is already set up in the initializer
-    }
 }
 
 struct TaskListHeaderView: View {
     @ObservedObject var taskViewModel: TaskViewModel
     @Binding var showingFilters: Bool
     @Binding var showingAddTask: Bool
-    @StateObject private var cameraService = CameraService()
     
     var body: some View {
         VStack(spacing: 15) {
@@ -130,18 +119,6 @@ struct TaskListHeaderView: View {
                     .cornerRadius(10)
                 }
                 
-                // Scan document button
-                Button(action: { cameraService.startDocumentScanning() }) {
-                    HStack {
-                        Image(systemName: "doc.viewfinder")
-                        Text("Scan")
-                    }
-                    .font(.headline)
-                    .foregroundColor(AppColorScheme.textPrimary)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                }
-                .neumorphicButton()
                 
                 Spacer()
                 
@@ -167,9 +144,6 @@ struct TaskListHeaderView: View {
         }
         .padding(.horizontal, 20)
         .padding(.top, 10)
-        .sheet(isPresented: $cameraService.isShowingDocumentScanner) {
-            DocumentScannerView(cameraService: cameraService)
-        }
     }
     
     private var hasActiveFilters: Bool {

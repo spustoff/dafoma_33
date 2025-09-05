@@ -250,12 +250,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"dafoma_33/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "TaskVantage Road";
-				INFOPLIST_KEY_NSCameraUsageDescription = "TaskVantage Road uses the camera to scan documents, meeting notes, and handwritten tasks. The app converts these scanned documents into actionable tasks using optical character recognition (OCR). For example, when you scan a meeting agenda, the app will automatically create individual tasks for each action item listed in the document, helping you stay organized and productive.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -286,12 +285,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"dafoma_33/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "TaskVantage Road";
-				INFOPLIST_KEY_NSCameraUsageDescription = "TaskVantage Road uses the camera to scan documents, meeting notes, and handwritten tasks. The app converts these scanned documents into actionable tasks using optical character recognition (OCR). For example, when you scan a meeting agenda, the app will automatically create individual tasks for each action item listed in the document, helping you stay organized and productive.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

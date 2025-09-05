@@ -32,7 +32,6 @@ class TaskViewModel: ObservableObject {
     
     init() {
         setupBindings()
-        setupNotificationObserver()
     }
     
     private func setupBindings() {
@@ -60,25 +59,6 @@ class TaskViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func setupNotificationObserver() {
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(handleTasksGeneratedFromText(_:)),
-            name: .tasksGeneratedFromText,
-            object: nil
-        )
-    }
-    
-    @objc private func handleTasksGeneratedFromText(_ notification: Notification) {
-        guard let userInfo = notification.userInfo,
-              let generatedTasks = userInfo["tasks"] as? [TaskModel] else { return }
-        
-        DispatchQueue.main.async { [weak self] in
-            for task in generatedTasks {
-                self?.addTask(task)
-            }
-        }
-    }
     
     // MARK: - Task Management
     func addTask(_ task: TaskModel) {

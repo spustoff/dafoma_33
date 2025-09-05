@@ -266,7 +266,7 @@ struct AboutView: View {
                                 .font(.headline)
                                 .foregroundColor(AppColorScheme.textPrimary)
                             
-                            Text("TaskVantage Road is a comprehensive task management and project oversight tool designed for business professionals. It combines traditional task management with educational insights and smart document scanning to streamline your workflow.")
+                            Text("TaskVantage Road is a comprehensive task management and project oversight tool designed for business professionals. It combines traditional task management with educational insights and smart organization features to streamline your workflow.")
                                 .font(.body)
                                 .foregroundColor(AppColorScheme.textSecondary)
                                 .lineSpacing(4)
@@ -284,7 +284,7 @@ struct AboutView: View {
                                 FeatureRow(icon: "checkmark.circle", text: "Task Management with Priority Levels")
                                 FeatureRow(icon: "folder.circle", text: "Multi-Project Oversight")
                                 FeatureRow(icon: "person.3.circle", text: "Team Collaboration Tools")
-                                FeatureRow(icon: "doc.viewfinder", text: "Smart Document Scanning")
+                                FeatureRow(icon: "doc.text", text: "Smart Task Organization")
                                 FeatureRow(icon: "lightbulb.circle", text: "Educational Insights & Analytics")
                             }
                         }
@@ -335,3 +335,4 @@ struct FeatureRow: View {
 #Preview {
     SettingsView()
 }
+
